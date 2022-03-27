@@ -1,0 +1,13 @@
+database,cluster,schema,table,column,user_email,read_count
+hive,gold,nightshift,clean_transaction,transaction_id,roald.amundsen@example.org,500
+hive,gold,nightshift,clean_transaction,transaction_id,aoald0@example.org,100
+hive,gold,nightshift,clean_transaction,transaction_id,boald1@example.org,100
+hive,gold,nightshift,clean_transaction,transaction_id,coald2@example.org,100
+hive,gold,nightshift,clean_transaction,transaction_id,doald3@example.org,100
+hive,gold,nightshift,clean_transaction,transaction_id,eoald4@example.org,100
+hive,gold,nightshift,clean_transaction,transaction_id,foald5@example.org,100
+hive,gold,nightshift,clean_transaction,transaction_id,goald6@example.org,100
+hive,gold,nightshift,clean_transaction,transaction_id,hoald7@example.org,100
+hive,gold,nightshift,clean_transaction,transaction_id,ioald8@example.org,10
+hive,gold,nightshift,clean_transaction,transaction_id,joald9@example.org,10
+hive,gold,nightshift,clean_transaction,transaction_id,koald9@example.org,10

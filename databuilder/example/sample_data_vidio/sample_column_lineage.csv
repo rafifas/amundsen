@@ -1,0 +1,3 @@
+source_column_key,target_column_key
+hive://gold.nightshift/transaction_details/transaction_id,hive://gold.nightshift/clean_transaction/transaction_id
+hive://gold.nightshift/clean_transaction/transaction_id,hive://gold.nightshift/monthly_retail_ecommerce/count_transaction

@@ -1,0 +1,4 @@
+db_name,schema,cluster,table_name,owners
+hive,nightshift,gold,clean_transaction,"john.doe@vidio.com,chrisc@vidio.com"
+hive,nightshift,gold,transaction_details,"john.doe@vidio.com,chrisc@vidio.com"
+hive,nightshift,gold,monthly_retail_ecommerce,"john.doe@vidio.com,chrisc@vidio.com"

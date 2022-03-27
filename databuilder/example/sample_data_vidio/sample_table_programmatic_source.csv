@@ -1,0 +1,16 @@
+database,cluster,schema,name,description,tags,description_source
+hive,gold,nightshift,transaction_details,"**Schedule**:
+Daily at 01:00:00 UTC+7
+
+**GCS Path**:
+gs://blackshift-vidio-bigdata-prod/tables/transaction-details",expensive,detail_description
+hive,gold,nightshift,clean_transaction,"**Schedule**:
+Daily at 01:00:00 UTC+7
+
+**GCS Path**:
+gs://blackshift-vidio-bigdata-prod/tables/clean-transaction",expensive,detail_description
+hive,gold,nightshift,monthly_retail_ecommerce,"**Schedule**:
+Daily at 01:00:00 UTC+7
+
+**GCS Path**:
+gs://blackshift-vidio-bigdata-prod/tables/monthly-retail-ecommerce",expensive,detail_description

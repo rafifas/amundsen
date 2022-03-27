@@ -1,0 +1,4 @@
+task_id,dag_id,application_url_template,db_name,schema,table_name,cluster
+submit_etl_clean_transaction_job,branch_processed_transactions.etl_clean_transaction,"https://airflow.analisis.io/admin/airflow/tree?dag_id=branch_processed_transactions.etl_clean_transaction",hive,nightshift,clean_transaction,gold
+submit_etl_transaction_details_job,branch_processed_transactions.etl_transaction_details,"https://airflow.analisis.io/admin/airflow/tree?dag_id=branch_processed_transactions.etl_transaction_details",hive,nightshift,transaction_details,gold
+submit_etl_monthly-retail-ecommerce_job,etl_monthly-retail-ecommerce,"https://airflow.analisis.io/admin/airflow/tree?dag_id=etl_monthly-retail-ecommerce",hive,nightshift,monthly_retail_ecommerce,gold

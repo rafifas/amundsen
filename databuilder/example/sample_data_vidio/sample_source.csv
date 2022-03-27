@@ -1,0 +1,4 @@
+db_name,cluster,schema,table_name,source,source_type
+hive,gold,nightshift,clean_transaction,"https://repo.kmklabs.com/kmk-online/DI/-/blob/master/etl-vidio/src/main/scala/com/vidio/etl/subscriptions/CleanTransactionEtl.scala",github
+hive,gold,nightshift,transaction_details,"https://repo.kmklabs.com/kmk-online/DI/-/blob/master/etl-vidio/src/main/scala/com/vidio/etl/subscriptions/TransactionDetailsEtl.scala",github
+hive,gold,nightshift,monthly_retail_ecommerce,"https://repo.kmklabs.com/kmk-online/DI/-/blob/master/etl-vidio/src/main/scala/com/vidio/etl/MonthlyRetailEcommerceETL.scala",github

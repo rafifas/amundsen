@@ -1,0 +1,6 @@
+database,cluster,schema,name,description,tags,is_view,description_source
+hive,gold,nightshift,clean_transaction,,"process_transaction",false,
+hive,gold,nightshift,monthly_retail_ecommerce,,"process_transaction",false,
+hive,gold,nightshift,transaction_details,,"process_transaction",false,
+postgres,gold,vidio_production,transactions,,"process_transaction",false,
+postgres,gold,vidio_production,bundle_transactions,,"process_transaction",false,

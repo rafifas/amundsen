@@ -1,0 +1,5 @@
+cluster,db,schema,table_name,col_name,stat_name,stat_val,start_epoch,end_epoch
+gold,hive,nightshift,clean_transaction,transaction_id,"distinct values","8",1432300762,1562300762
+gold,hive,nightshift,clean_transaction,transaction_id,"num nulls","""500320""",1432300762,1562300762
+gold,hive,nightshift,transaction_details,transaction_id,"distinct values","8",1432300762,1562300762
+gold,hive,nightshift,transaction_details,transaction_id,"num nulls","""500320""",1432300762,1562300762

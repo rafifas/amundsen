@@ -1,0 +1,8 @@
+name,category,database,cluster,schema,table_name
+storage_method_snapshot,table_status,hive,gold,nightshift,transaction_details
+storage_method_incremental,table_status,hive,gold,nightshift,clean_transaction
+stage_processed,table_status,hive,gold,nightshift,transaction_details
+stage_processed,table_status,hive,gold,nightshift,clean_transaction
+table_type_fact,table_status,hive,gold,nightshift,transaction_details
+table_type_fact,table_status,hive,gold,nightshift,clean_transaction
+table_type_fact,table_status,hive,gold,nightshift,clean_transaction

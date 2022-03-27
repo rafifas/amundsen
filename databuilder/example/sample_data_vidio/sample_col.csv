@@ -1,0 +1,19 @@
+name,description,col_type,sort_order,database,cluster,schema,table_name,badges
+transaction_id,"col1 description","string",1,hive,gold,nightshift,clean_transaction,PK
+guid,"col2 description","string",2,hive,gold,nightshift,clean_transaction,PII
+user_id,"col3 description","string",3,hive,gold,nightshift,clean_transaction,
+ts,"col4 description","timestamp",4,hive,gold,nightshift,clean_transaction,
+count_plays,"col1 description","bigint",1,hive,gold,nightshift,monthly_retail_ecommerce,
+count_watchers,"col2 description","bigint",2,hive,gold,nightshift,monthly_retail_ecommerce,
+count_transaction,"col3 description","bigint",3,hive,gold,nightshift,monthly_retail_ecommerce,
+ts,"col4 description","timestamp",4,hive,gold,nightshift,monthly_retail_ecommerce,
+transaction_id,"col1 description","string",1,hive,gold,nightshift,transaction_details,PK
+guid,"col2 description","string",2,hive,gold,nightshift,transaction_details,PII
+user_id,"col3 description","string",3,hive,gold,nightshift,transaction_details,
+ts,"col4 description","timestamp",4,hive,gold,nightshift,transaction_details,
+id,"col1 description","int",1,postgres,gold,vidio_production,transactions,PK
+transaction_id,"col1 description","int",2,postgres,gold,vidio_production,transactions,
+user_id,"col1 description","int",3,postgres,gold,vidio_production,transactions,
+id,"col1 description","int",1,postgres,gold,vidio_production,transactions,PK
+transaction_id,"col1 description","int",2,postgres,gold,vidio_production,transactions,
+primary_transaction_id,"col1 description","int",3,postgres,gold,vidio_production,transactions,

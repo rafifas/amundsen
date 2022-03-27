@@ -1,0 +1,4 @@
+cluster,db,schema,table_name,last_updated_time_epoch
+gold,hive,nightshift,clean_transaction,1570230473
+gold,hive,nightshift,transaction_details,1570230473
+gold,hive,nightshift,monthly_retail_ecommerce,1570230473

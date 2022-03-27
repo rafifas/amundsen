@@ -1,0 +1,5 @@
+source_table_key,target_table_key
+hive://gold.nightshift/clean_transaction,hive://gold.nightshift/monthly_retail_ecommerce
+hive://gold.nightshift/transaction_details,hive://gold.nightshift/clean_transaction
+postgres://gold.vidio_production/transactions,hive://gold.nightshift/transaction_details
+postgres://gold.vidio_production/bundle_transactions,hive://gold.nightshift/transaction_details
