@@ -21,7 +21,7 @@ const configDefault: AppConfig = {
     plugins: [],
   },
   indexDashboards: {
-    enabled: false,
+    enabled: true,
   },
   indexUsers: {
     enabled: false,
@@ -48,7 +48,7 @@ const configDefault: AppConfig = {
     notificationsEnabled: false,
   },
   announcements: {
-    enabled: false,
+    enabled: true,
   },
   navLinks: [
     {
