@@ -273,8 +273,8 @@ const configDefault: AppConfig = {
           iconPath: '/static/images/icons/logo-dremio.svg',
         },
         github: {
-          displayName: 'Github',
-          iconPath: '/static/images/github.png',
+          displayName: 'GitLab',
+          iconPath: '/static/images/kmk-online-logo.png',
         },
       },
       notices: {},
