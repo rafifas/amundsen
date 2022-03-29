@@ -35,6 +35,7 @@ const configCustom: AppConfigCustom = {
     },
   },
   productTour: {},
+  logoPath: '/static/images/vidio-logo.png'
 };
 
 export default configCustom;
