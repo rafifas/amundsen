@@ -36,7 +36,7 @@ services:
         - discovery.type=single-node
         - xpack.security.enabled=false
   amundsensearch:
-      image: amundsendev/amundsen-search:2.11.1
+      image: amundsendev/amundsen-search:3.1.0
       container_name: amundsensearch
       ports:
         - 5001:5000
@@ -48,7 +48,7 @@ services:
         - PROXY_ENDPOINT=es_amundsen
       command: gunicorn -w 2 --bind :5000 search_service.search_wsgi
   amundsenmetadata:
-      image: amundsendev/amundsen-metadata:3.9.0
+      image: amundsendev/amundsen-metadata:3.10.0
       container_name: amundsenmetadata
       depends_on:
         - neo4j
@@ -60,7 +60,12 @@ services:
          - PROXY_HOST=bolt://neo4j_amundsen
       command: gunicorn -w 2 --bind :5000 metadata_service.metadata_wsgi
   amundsenfrontend:
-      image: amundsendev/amundsen-frontend:3.12.0
+      build:
+        args:
+          SEARCHSERVICE_BASE: http://amundsensearch:5001
+          METADATASERVICE_BASE: http://amundsenmetadata:5002
+        context: .
+        dockerfile: Dockerfile.frontend.local
       container_name: amundsenfrontend
       depends_on:
         - amundsenmetadata
@@ -72,12 +77,7 @@ services:
       environment:
         - SEARCHSERVICE_BASE=http://amundsensearch:5000
         - METADATASERVICE_BASE=http://amundsenmetadata:5000
-        # Only for easy config-less Quickstart bookmark evalutation. `TestConfig` extends ordinary `LocalConfig` by
-        # defining `AUTH_USER_METHOD` to a hardcoded dummy user in `amundsen_application.tests.test_utils.get_test_user()`
-        # See further docs in https://github.com/amundsen-io/amundsenfrontendlibrary/blob/master/docs/configuration.md#flask
-        # and https://github.com/amundsen-io/amundsenfrontendlibrary/blob/master/docs/configuration.md#authentication
         - FRONTEND_SVC_CONFIG_MODULE_CLASS=amundsen_application.config.TestConfig
-      command: gunicorn -w 2 --bind :5000 amundsen_application.wsgi
 
 networks:
   amundsennet:
